@@ -1,0 +1,52 @@
+// ==================== Основные стили =====================
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-variant-numeric: lining-nums;
+    //font-family: Century-Gothic;
+    //color: $black;
+    height: 100%;
+}
+
+main {
+  
+}
+
+section {
+
+}
+
+img {
+    pointer-events: none;
+}
+
+.container {
+    max-width: var(--container-width);
+    width: 81.25vw;
+    margin: 0 auto;
+}
+
+
+// ==================== Стилизация scrollbar =====================
+
+
+body::-webkit-scrollbar {
+    width: 6px;
+    height: 200px;               /* ширина scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #FFFFFF;        /* цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+    // background-color: $gray;    /* цвет плашки */
+    border-radius: 5px;       /* закругления плашки */
+     
+}

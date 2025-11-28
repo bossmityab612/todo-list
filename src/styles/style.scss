@@ -1,0 +1,118 @@
+@import '../fonts/etude-noire.css';
+@import './_reset';
+@import './_vars';
+@import './_fonts';
+@import './_mixins';
+@import './_common';
+@import '../components//header/header.scss';
+@import './_main';
+
+
+@import '_media';
+
+:root {
+  --etude-noire: 'Etude Noire', Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--etude-noire);
+  background-color: #1f1f1f;
+  color: #cacaca;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+header.container {
+  margin: 20px 0;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+  @include MaxHeight(120);
+  @include flexbox();
+
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: sticky;
+}
+
+header img {
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+header p {
+  @include fontSize(26);
+  line-height: 16px;
+}
+
+.intro {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0px auto;
+  padding: 100px 50px;
+
+  @include flexbox();
+  @include MinHeight(800);
+  @include fontSize(84);
+  
+  flex-direction: column;
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+  z-index: 1;
+}
+
+.intro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url('../images/IMG_2969.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  opacity: .7;
+}
+
+footer p {
+  padding: 0 0 64px;
+
+  @include fontSize(18);
+}
+
+@media screen and (max-width: 640px) {
+  header p {
+    @include fontSize(13);
+    text-align: right;
+    line-height: 22px;
+  }
+
+  .main .intro {
+    @include fontSize(34);
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  .intro::before {
+    background-position: right;
+  }
+
+}
