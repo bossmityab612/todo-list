@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="icon" href="./images/icon.ico">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <title>Веб-мастерица</title>
+  <title>Мой Список дел</title>
 </head>
 <body>
 
@@ -26,59 +26,28 @@
 			</div>
 		</section>
 
-		<section class="projects container">
-			<div class="swiper">
-				<ul class="swiper-wrapper">
-					<li class="swiper-slide">
-						<h2>Проект Место</h2>
-						<a class="projects__preview" target="_blank" href="https://bossmityab612.github.io/mesto-project/">
-							<img class="projects__preview-image" src="../images/bossmityab612.github.io_mesto-project_.png" alt="">
-						</a>
-					</li>
-					<li class="swiper-slide">
-						<h2>Проект Я.Практикум <br>Научиться учиться</h2>
-						<a class="projects__preview" href="https://bossmityab612.github.io/mesto-project/">
-							<img class="projects__preview-image" src="../images/_C__Users_9ABE80B1B5BD_Desktop_8FBDB4B5BA81_second-project_1651337174_second-project_index.html.png" alt="">
-						</a>
-					</li>
-					<li class="swiper-slide">
-						<h2>Проект Путешествия по России</h2>
-						<a class="projects__preview" href="https://bossmityab612.github.io/russian-travel/">
-							<img class="projects__preview-image" src="../images/bossmityab612.github.io_russian-travel_.png" alt="">
-						</a>
-					</li>
-					<li class="swiper-slide">
-						<h2>Сайт World Plus</h2>
-						<a class="projects__preview" href="https://word-plus-psi.vercel.app/">
-							<img class="projects__preview-image" src="../images/word-plus-psi.vercel.app_.png" alt="">
-						</a>
-					</li>
-				</ul>
-				<!-- If we need pagination -->
-				<div class="swiper-pagination"></div>
-
-				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
-			</div>
-
+		<!-- -------------- Туду лист блок ------------ -->
+		<section class="todo__container container1">
+			<div class="container">
+        <h1>Мой Список Дел</h1>
+        
+        <div class="input-section">
+					<input type="text" id="todoInput" placeholder="Что нужно сделать?">
+					<button id="addBtn">Добавить</button>
+        </div>
+        
+        <ul id="todoList" class="todo-list">
+					<!-- Задачи появятся здесь -->
+        </ul>
+        
+        <div class="stats">
+					<span id="taskCounter">Задач: 0</span>
+        </div>
+    	</div>
 		</section>
+		<!-- -------------- /Туду лист блок ------------ -->
 
-		<section class="description container">
-			<div>
-				<p>
-					Занимаюсь разработкой сайтов с 2023-го года. Образование Среднее Профессиональное по специальность оператор электронных и электронно-вычислительных машин
-				</p>
-				<p>
-					Проходила курсы Яндекс. Практикума по направлению Веб-Разработка. Честно скажу, прошла только 46% курса, но в данный момент прохожу курсы от другой платформы - HTML Academy
-				</p>
-				<p>
-					Главные навыки:<br>
-					HTML, CSS знаю хорошо, JS - базовый. Также хорошо знакома с системой контроля версий - GIT. 
-				</p>
-			</div>
-
-		</section>
+	
 	</main>
 
 	<footer class="container">

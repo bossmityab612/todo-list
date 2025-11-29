@@ -1,20 +1,12 @@
+// Пока просто проверяем, что всё работает
+console.log("Туду-лист загружен!");
 
-// ----------- Слайдер для проектов ------------
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
-  slidesPerView: 1,
+// Находим элементы
+const todoInput = document.getElementById('todoInput');
+const addBtn = document.getElementById('addBtn');
+const todoList = document.getElementById('todoList');
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-});
+// Проверяем, что элементы найдены
+console.log("Поле ввода:", todoInput);
+console.log("Кнопка:", addBtn);
+console.log("Список:", todoList);

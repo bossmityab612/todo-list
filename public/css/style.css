@@ -242,8 +242,44 @@ header p {
   opacity: 0.7;
 }
 
+.input-section {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#todoInput {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#addBtn {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
 footer p {
-  padding: 0 0 64px;
+  padding: 64px 0;
   font-size: clamp(18px * var(--coefficient), 18 * 100vw / var(--design-width) * var(--mobile-coefficient), 18px * var(--mobile-coefficient));
 }
 
@@ -272,24 +308,7 @@ footer p {
   .intro::before {
     background-position: right;
   }
-}lay: -webkit-flex;
-  display: flex;
-  align-items: flex-start;
-  overflow: hidden;
-}
-
-.projects__preview-image {
-  object-fit: cover;
-}
-
-footer p {
-  padding: 0 0 64px;
-  font-size: clamp(18px * var(--coefficient), 18 * 100vw / var(--design-width) * var(--mobile-coefficient), 18px * var(--mobile-coefficient));
-}
-
-@media screen and (max-width: 640px) {
-  header {
-    font-size: clamp(14px * var(--coefficient), 14 * 100vw / var(--design-width) * var(--mobile-coefficient), 14px * var(--mobile-coefficient));
+}ficient), 14px * var(--mobile-coefficient));
     text-align: right;
   }
   .main .intro {

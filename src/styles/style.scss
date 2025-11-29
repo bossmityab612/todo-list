@@ -92,8 +92,48 @@ header p {
   opacity: .7;
 }
 
+// ----------- Список дел ------------
+
+.input-section {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#todoInput {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#addBtn {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+// ----------- /Список дел ------------
+
 footer p {
-  padding: 0 0 64px;
+  padding: 64px 0;
 
   @include fontSize(18);
 }
@@ -114,5 +154,4 @@ footer p {
   .intro::before {
     background-position: right;
   }
-
 }
